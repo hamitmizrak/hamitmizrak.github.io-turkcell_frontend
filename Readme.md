@@ -2,8 +2,8 @@
 
 ![readme](./picture/pages.png)
 
-# TeachCareer Tubisad FrontEnd  Full Stack 2022
-* [GitHub](https://github.com/hamitmizrak/TeachCareer_Tubisad)
+# Turkcell Full Stack Developer 2022
+* [GitHub](https://)
 * 
 ### Gereksinimler
 
@@ -15,6 +15,7 @@ Node js
 ## Visual Studio codes
 Extensisons
 - Tabnine
+- Fira codes google font indirmelisin
 - Browser preview
 - Auto Close tag
 - Auto import

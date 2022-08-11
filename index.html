@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="tr">
 <!-- title-->
-<title>My page</title>
+<title>One Page Project</title>
 <!-- favicon -->
-<link rel="icon" href="picture/favicon.jpg" />
+<link rel="icon" type="image/x-icon" href="picture/turkcell--600.png">
+
 
 <!-- Turkce karakter -->
 <meta charset="utf-8" />
@@ -41,11 +42,19 @@
 <link rel="stylesheet" href="css/animate.min.css">
 <!-- wow js-->
 <script src="js/wow.min.js"></script>
-<script> new WOW().init() </script>
+<script> new WOW(
+     {
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true        // default
+       }
+
+).init() </script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar-example">
-
+<body  class="scrollbar-auto" data-bs-spy="scroll" data-bs-target="#navbar-example">
     <!-- Navbar start -->
     <nav class="navbar fixed-top  navbar-expand-lg navbar-dark bg-dark" id="navbar">
         <!-- Container wrapper -->
@@ -53,8 +62,7 @@
             <!-- Navbar brand -->
             <div id="logo_div">
                 <a class="navbar-brand me-2" href="#">
-                    <img src="//d9hhrg4mnvzow.cloudfront.net/www.techcareer.net/mainpage/en/57e21290-techcareer-logo-web_104600g000000000000028.png"
-                        height="16" alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
+                    <img src="picture/logo.jpg" height="40" alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
                 </a>
             </div>
 
@@ -281,15 +289,17 @@
         <div class="jumbotron text-white">
             <div class="container" style="opacity:.9">
                 <div class="p-5 text-center">
-                    <h1 class="text-uppercase display-3 shadow wow bounceIn animated" data-wow-delay=".40s">Tubisad fronend
-                        Eğitimimize hoşgeldiniz</h1>
-                    <h4 class="wow bounceIn animated" data-wow-delay=".50s">Html5 Css3 Bootstrap RD</h4>
-                    <a class="btn btn-outline-warning shadow wow bounceIn animated" data-wow-delay=".50s" href="#">Bizi
+                    <h2 class="opacity-25 text-uppercase  shadow wow bounceIn animated bg-warning text-dark" data-wow-delay=".40s">
+                        Turkcell Frondend Backend Eğitimimize hoşgeldiniz</h2>
+                    <h4 class="wow bounceIn animated mt-4 mb-4" data-wow-delay=".50s">Html5 Css3 JS Bootstrap Responsive design</h4>
+                    <h4 class="wow bounceIn animated mb-4" data-wow-delay=".50s">JavaSE Spring Framework Spring MVC -Rest-Data-Secuirty</h4>
+                    <a href="https://www.turkcell.com.tr/?gclid=EAIaIQobChMIj536h8---QIVShoGAB3KBgeREAAYASAAEgI_m_D_BwE&gclsrc=aw.ds"
+                        class="btn btn-warning shadow wow bounceIn animated" data-wow-delay=".50s" target="_blank"><img style="width: 2.2rem;" src="picture/logo2.png" alt="Turkcell" /> Bizi
                         Takip Edin</a>
-                        <a href="https://www.linkedin.com/in/hamit-m-a569ba129/" class="btn btn-outline-primary shadow wow bounceIn animated"
+                        <a href="https://www.linkedin.com/in/hamit-m-a569ba129/" class="btn btn-primary shadow wow bounceIn animated"
                             data-wow-delay=".60s" target="_blank"><i class="fa-brands fa-linkedin" style="margin-right: 5px"></i>
                             Linkedin</a>
-                        <a href="https://github.com/hamitmizrak" class="btn btn-outline-dark shadow wow bounceIn animated" data-wow-delay=".60s"
+                        <a href="https://github.com/hamitmizrak" class="btn btn-dark shadow wow bounceIn animated" data-wow-delay=".60s"
                             target="_blank"><i class="fa-brands fa-github" style="margin-right: 5px"></i>
                             Github</a
                 </div>
@@ -303,19 +313,19 @@
         <!-- section-10 ends : Icon -->
         <section id="section10">
             <div class="icon_message">
-                <h2 class="text-center text-uppercase">Çalışmalarımız</h2>
-                <div class="container">
+                <h2 class="text-center text-uppercase wow slideInLeft mb-5">Çalışmalarımız</h2>
+                <div class="container wow slideInRight">
                     <div class="row">
-                        <div class="col-12 col-md-3 col-xl-4 text-center wow rotateInDownLeft animated"
-                            data-wow-delay=".40">
+                        <div class="col-12 col-md-3 col-xl-4 text-center wow bounceInUp animated"
+                        data-wow-duration="1s" data-wow-delay="1.5s">
                             <i class="fa-brands fa-cc-amazon-pay text-center text-primary"></i>
                             <h4>E-Ticaret</h4>
                             <p>E-Ticaret Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, totam?</p>
                             <div class="col-12 text-center"><button class="btn btn-outline-primary">More ..</button>
                             </div>
                         </div>
-                        <div class="col-12 col-md-3 col-xl-4 text-center wow rotateInUpLeft animated"
-                            data-wow-delay=".50">
+                        <div class="col-12 col-md-3 col-xl-4 text-center  wow bounceInDown animated"
+                        data-wow-duration="1s" data-wow-delay="1.7s">
                             <i class="fa-solid fa-chart-pie text-danger"></i>
                             <h4>Pie</h4>
                             <p>Pie dijital card Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, totam?
@@ -323,8 +333,8 @@
                             <div class="col-12 text-center"><button class="btn btn-outline-primary">More ..</button>
                             </div>
                         </div>
-                        <div class="col-12 col-md-3 col-xl-4 text-center wow rotateInDownRight animated"
-                            data-wow-delay=".60">
+                        <div class="col-12 col-md-3 col-xl-4 text-center  wow bounceInUp animated"
+                        data-wow-duration="1s" data-wow-delay="1.9s">
                             <i class="fa-solid fa-cubes text-secondary"></i>
                             <h4>YapBoz</h4>
                             <p>E-Ticaret Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, totam?</p>
@@ -338,31 +348,38 @@
         <!-- section-10 ends : Icon -->
 
     <!-- section-2 start -->
-    <!-- section-2 start -->
-    <section id="counter" class="wow fadeIn">
+    <section id="counter" class="wow slideInLeft  ">
         <div class="container" style="margin-top: 3rem; margin-bottom: 3rem">
             <div class="counter-header">
-                <h3>Başarılarımız bakmak ister misiniz ?</h3>
+                <h3>Bizi Yakında Takip Etmek ister misiniz ?</h3>
                 <p>Başarı Counter</p>
             </div>
     
             <div class="row counters">
-                <div class="col-lg-3 col-md-6 mx-auto text-center">
-                    <span data-toggle="counter-up">+36.000</span>
+                <div class="col-lg-3 col-md-6 mx-auto text-center wow rotateInDownLeft animated"
+                data-wow-duration="1s" data-wow-delay=".7s" >
+                    <i class="fa-regular fa-clock"></i>
+                    <span data-toggle="counter-up" class="wow bounceIn">+36.000</span>
                     <p class="text-center">Çalışma Saati</p>
                 </div>
     
-                <div class="col-lg-3 col-md-6 mx-auto text-center">
+                <div class="col-lg-3 col-md-6 mx-auto text-center wow rotateInDownLeft animated"
+                data-wow-duration="1s" data-wow-delay=".8s">
+                    <i class="fa-solid fa-list-check"></i>
                     <span data-toggle="counter-up">55</span>
                     <p class="text-center">Proje</p>
                 </div>
     
-                <div class="col-lg-3 col-md-6 mx-auto text-center">
+                <div class="col-lg-3 col-md-6 mx-auto text-center wow rotateInDownLeft animated"
+                data-wow-duration="1s" data-wow-delay=".9s">
+                    <i class="fa-solid fa-laptop-code"></i>
                     <span data-toggle="counter-up">1000.000</span>
                     <p class="text-center">Satır Kod</p>
                 </div>
     
-                <div class="col-lg-3 col-md-6 mx-auto text-center">
+                <div class="col-lg-3 col-md-6 mx-auto text-center wow rotateInDownLeft animated"
+                data-wow-duration="1s" data-wow-delay="1s">
+                    <i class="fa-brands fa-buffer"></i>
                     <span data-toggle="counter-up">100</span>
                     <p class="text-center">Proje Teslim Edildi</p>
                 </div>
@@ -374,7 +391,7 @@
 
         <!-- section-1 start : ability -->
         <section id="ability">
-            <div class="container" style="margin-top:3rem; margin-bottom:3rem;">
+            <div class="container">
                 <p class="text-uppercase display-6 text-center text-light">Ability</p>
                 <div class="row">
                     <div class="col-md">
@@ -427,7 +444,8 @@
         <!-- section-1 end -->
 
         <!-- parallax scrolling start -->
-        <section class="parallax_class">
+        <section class="parallax_class  wow bounceInUp animated"
+        data-wow-duration="1s" data-wow-delay=".6s">
             <div class="container">
                 <div class="row">
                     <h2 class="text-center">Parallax Data</h2>
@@ -448,7 +466,7 @@
         <!-- parallax scrolling start -->
 
         <!-- section-3 start : NewsPaper -->
-        <section id="section_3">
+        <section id="section_3" >
             <div class="container">
                 <div class="row">
                     <h2 class="text-uppercase display-6 text-center wow rotateInDownLeft animated mb-4" data-wow-delay=".40">
@@ -456,67 +474,13 @@
                     <p id="newspaper_id" class=" wow rotateInDownRight animated" data-wow-delay=".40">
                         Yeni haber Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit magnam laudantium
                         iure
-                        maiores nam cum, asperiores dolores autem deserunt molestiae placeat inventore vitae voluptate.
-                        Tempora
-                        obcaecati voluptatibus dicta harum molestias?
-                        Voluptas corporis laboriosam magni, voluptatem voluptates deleniti quia, dolorum, tempore odit
-                        unde
-                        expedita rem eaque blanditiis reiciendis ea inventore. Placeat reprehenderit voluptates natus
-                        commodi
-                        dolore rerum consectetur, nesciunt temporibus itaque.
-                        Cum eveniet sint, corrupti architecto delectus animi odit, quidem repudiandae iste id nesciunt.
-                        Amet,
-                        sit ut! Fugiat impedit officia vero sint natus voluptates mollitia aperiam est tempore? Debitis,
-                        nemo
-                        nam!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto quod deserunt
-                        eligendi assumenda illum ullam dolore, reiciendis vel laudantium, quae voluptatum asperiores
-                        obcaecati sit nesciunt. Quasi vitae non aut?
-                        Vero ipsa natus non nostrum quisquam, at quam voluptatibus illo veritatis vitae, aperiam
-                        mollitia. Eius impedit, a fugit alias repellendus vitae necessitatibus odio dolorem autem!
-                        Impedit deserunt accusantium quisquam fugiat.
-                        Veniam id porro molestiae sunt error ipsum cupiditate, ullam excepturi itaque illo consectetur
-                        nostrum sapiente recusandae reiciendis esse quidem praesentium quis at voluptas, earum optio
-                        repellat reprehenderit. Distinctio, tempora sint?
-                        Quaerat, mollitia maiores nihil minus enim tenetur voluptates exercitationem facere odit labore
-                        tempore cum amet? Ratione sed iure rem ut, fugit, modi laudantium, commodi possimus quis
-                        corrupti qui aspernatur voluptate.
-                        Nobis unde vel pariatur porro magni aliquid eveniet quas, quia commodi at cum veniam voluptates
-                        facere ipsum earum, voluptas reiciendis voluptate? Omnis quibusdam tenetur explicabo debitis,
-                        natus eaque quae voluptas.
-                        Quae tempora facere pariatur ut quis eligendi atque totam quidem magnam deleniti, vitae adipisci
-                        id
-                        quasi accusamus expedita ullam perspiciatis recusandae fuga corporis architecto autem?
-                        Consequuntur
-                        voluptates dolorem est laudantium! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Soluta
-                        voluptate placeat dolore quo, ratione rerum a cum vitae harum tempore voluptatem at reiciendis
-                        pariatur
-                        velit repudiandae, ipsum fuga iusto hic.
-                        Et esse magnam repudiandae, ipsum dolores odio est iste eligendi in quisquam. Repellat magnam
-                        architecto
-                        esse quibusdam, eligendi autem praesentium, distinctio qui dignissimos, aperiam minima nostrum
-                        mollitia
-                        quos natus totam!
-                        Est ipsam vitae sapiente cumque placeat ullam quasi quidem quos quod eligendi! Dolorem sequi
-                        deleniti
-                        nihil soluta in pariatur molestias maiores mollitia amet! Officia deleniti ipsum quam,
-                        dignissimos
-                        incidunt animi.
-                        Adipisci veniam quis ad ipsa inventore corrupti iusto perferendis, assumenda distinctio nobis
-                        quasi,
-                        dicta dignissimos, iure sint esse quas iste qui blanditiis libero illum officiis! Perferendis
-                        quos at
-                        quia consequatur?
-                        Obcaecati, cum aut in earum et quidem dolores numquam vero aliquid suscipit molestias
-                        repellendus culpa
-                        autem tempora architecto id voluptate veniam commodi fuga distinctio modi debitis. Quae
-                        perspiciatis
-                        iste ipsum.
+                        maiores nam cum, asperiores dolores autem deserunt molestiae placeat inventore vitae voluptate. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste voluptates hic ducimus neque accusantium facilis. Aliquam maxime hic nobis quas dolore fuga nemo mollitia quia, alias est dolorem reprehenderit voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, consectetur nisi culpa sed doloremque quia cumque aspernatur eius tempora voluptatibus placeat officiis suscipit quo aperiam, consequuntur impedit ducimus. Unde, mollitia?
+                        Dolor accusantium optio sit laudantium quasi consequatur a, dolorem fugit alias numquam accusamus culpa earum eaque illo consequuntur ratione mollitia tempora, fugiat, eveniet animi quia eius unde. Velit, eum modi.
+                    
                     </p>
                     <div class="col-md-5"></div>
                     <div class="col-md-4">
-                        <a href="" class="btn btn-outline-warning text-center btn-lg wow rotateInDownLeft animated"
+                        <a href="" class="btn btn-outline-warning text-center btn-sm wow rotateInDownLeft animated"
                             data-wow-delay=".80">Read me ..</a>
                     </div>
                 </div>
@@ -525,13 +489,15 @@
         <!-- section-3 end -->
 
         <!-- section-2 start -->
-        <section id="section_2">
+        <section id="section_2" class="wow bounceInRight animated"
+        data-wow-duration="1s" data-wow-delay=".5s">
             <div class="container">
                 <div class="row">
                     <h2 class="text-uppercase display-6 text-center wow rotateInDownLeft animated mb-4" data-wow-delay=".40">
                         Blog</h2>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow bounceInRight animated"
+                    data-wow-duration="1s" data-wow-delay=".5s" >
                         <div class="card">
                             <img class="card-img-top" src="picture/transparent.jpg" alt="Title">
                             <div class="card-body">
@@ -549,7 +515,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow bounceInRight animated"
+                    data-wow-duration="1s" data-wow-delay=".6s">
                         <div class="card">
                             <img class="card-img-top" src="picture/office-gc2455a673_1920.jpg" alt="Title">
                             <div class="card-body">
@@ -567,7 +534,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3  wow bounceInRight animated"
+                    data-wow-duration="1s" data-wow-delay=".7s">
                         <div class="card">
                             <img class="card-img-top" src="picture/meeting-g9a3aff941_1920.jpg" alt="Title">
                             <div class="card-body">
@@ -584,7 +552,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3  wow bounceInRight animated"
+                    data-wow-duration="1s" data-wow-delay=".8s">
                         <div class="card">
                             <img class="card-img-top" src="picture/resim1.jpg" alt="Title">
                             <div class="card-body">
@@ -602,7 +571,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow bounceInRight animated"
+                    data-wow-duration="1s" data-wow-delay=".9s">
                         <div class="card">
                             <img class="card-img-top" src="picture/resim1.jpg" alt="Title">
                             <div class="card-body">
@@ -620,7 +590,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow bounceInRight animated"
+                    data-wow-duration="1s" data-wow-delay="1s">
                         <div class="card">
                             <img class="card-img-top" src="picture/office-gc2455a673_1920.jpg" alt="Title">
                             <div class="card-body">
@@ -638,7 +609,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow bounceInRight animated"
+                    data-wow-duration="1s" data-wow-delay="1.2s">
                         <div class="card">
                             <img class="card-img-top" src="picture/meeting-g9a3aff941_1920.jpg" alt="Title">
                             <div class="card-body">
@@ -656,7 +628,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3  wow bounceInRight animated"
+                    data-wow-duration="1s" data-wow-delay="1.5s">
                         <div class="card">
                             <img class="card-img-top" src="picture/transparent.jpg" alt="Title">
                             <div class="card-body">
@@ -680,16 +653,48 @@
         </section>
         <!-- section-2 end -->
 
+                <!-- section-7 start -->
+                <section id="section_7"  class="wow rotateInUpRight animated"
+                data-wow-duration="1s" data-wow-delay=".7s">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span>About Me</span>
+                                <h4>Computer Sience <em>Frontend</em></h4>
+                                <p> <em style="color: #f5a425; background-color:rgb(0, 0, 0);padding: .2rem;"> my ability
+                                        technology</em>
+                                    html5, css3, js, jqyuery, bootstrap, react, angular, Java, JavaSE, Spring, Springmvc ,
+                                    Spring Data, Spring Security, Jsp, Jsf, Mysql, MariaDb, Hibernates, H2DB, Primeface,
+                                    Servlet, Hibernate, Rest, Microservices,
+                                    Docker, Kubernates,Ansible Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+                                    vero nihil explicabo ipsum, recusandae quisquam iure, suscipit voluptate debitis quia
+                                    placeat doloribus maiores quasi error sapiente repellat, possimus officia adipisci!
+                                    Nulla, vitae! Amet maiores quo, eius porro qui doloremque a? Ut velit facilis illo eligendi
+                                    consequuntur! Consequuntur rerum ipsa accusantium architecto, animi magni beatae optio
+                                    perspiciatis, velit libero, voluptatum quae! <a rel="nofollow" href="https://"
+                                        target="_parent">GitHub</a>
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>My Profiles</h4>
+                                <a href="https://www.youtube.com">
+                                    <img class="w-100"  src="picture/transparent.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- section-7 start -->
 
         <!-- section-6 start -->
         <!-- contact -->
-        <section id="section_6">
+        <section id="section_6" class="wow bounceInLeft animated"
+        data-wow-duration="1s" data-wow-delay=".5s">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <h2 class="text-center text-uppercase text-light">Contact</h2>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="contact_left">
                         <form action="#!" id="contact_form">
                             <div class="row">
                                 <div class="col-md-6">
@@ -719,7 +724,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="contact_left">
                         <div id="map">
                             <iframe
                                 src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -730,37 +735,6 @@
             </div>
         </section>
         <!-- section-6 start -->
-
-        <!-- section-7 start -->
-        <section id="section_7">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <span>About Me</span>
-                        <h4>Computer Sience <em>Frontend</em></h4>
-                        <p> <em style="color: #f5a425; background-color:rgb(0, 0, 0);padding: .2rem;"> my ability
-                                technology</em>
-                            html5, css3, js, jqyuery, bootstrap, react, angular, Java, JavaSE, Spring, Springmvc ,
-                            Spring Data, Spring Security, Jsp, Jsf, Mysql, MariaDb, Hibernates, H2DB, Primeface,
-                            Servlet, Hibernate, Rest, Microservices,
-                            Docker, Kubernates,Ansible Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
-                            vero nihil explicabo ipsum, recusandae quisquam iure, suscipit voluptate debitis quia
-                            placeat doloribus maiores quasi error sapiente repellat, possimus officia adipisci!
-                            Nulla, vitae! Amet maiores quo, eius porro qui doloremque a? Ut velit facilis illo eligendi
-                            consequuntur! Consequuntur rerum ipsa accusantium architecto, animi magni beatae optio
-                            perspiciatis, velit libero, voluptatum quae! <a rel="nofollow" href="https://"
-                                target="_parent">GitHub</a>
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <h4>My Profiles</h4>
-                        <a href="https://www.youtube.com">
-                            <img style="max-width: 35rem;" src="picture/transparent.jpg"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section-7 start -->
 
     </main>
     <!-- main-end -->
@@ -815,7 +789,7 @@
                     </div>
 
                     <!-- left-2 -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow44">
                         <h6 class="text-uppercase mb-3">FrontEnd</h6>
                         <p><a href="" class="text-reset">Html5</a></p>
                         <p><a href="" class="text-reset">CSS3</a></p>
@@ -823,7 +797,7 @@
                     </div>
 
                     <!-- left-3 -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow44">
                         <h6 class="text-uppercase mb-3">Backend</h6>
                         <p><a href="" class="text-reset">Node JS</a></p>
                         <p><a href="" class="text-reset">Java</a></p>
@@ -858,7 +832,7 @@
 
         <!-- CopyRight -->
         <div class="text-center p-5 bg-dark" id="copy_right">
-            &copy; ©2022 Copyright;
+            &copy; 2022 Bütün Haklar Saklıdır
             <a href="https://www.hamitmizrak.com.tr" class="">Hamit Mızrak</a>
         </div>
     </footer>
